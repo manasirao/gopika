@@ -1,0 +1,223 @@
+<style>
+  html, body {
+    height:100%;
+    margin:0;
+  }
+
+  body{
+    padding-to: 70px;
+  }
+  .navbar{
+    margin:0;
+    height: 65px;
+
+  }
+  #logoName {
+    float: right;
+    color: white;
+    padding: 6px 0 0 15px;
+    font-size: 1.3em;
+  }
+  #logo{
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    position: relative;
+    top:-11px;
+  }
+  .navbar-brand .navbar-header{
+    margin:0;
+    padding:0;
+  }
+  .down{
+    padding-top: 8px;
+    font-size: 1.2em;
+  }
+
+    #mainDiv:before {
+    background-image: url("images/palace-bg.jpg");
+    background-size: 250px auto;
+    background-repeat: repeat;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+  }
+
+  #mainDiv {
+    position: relative;
+    height:720px;
+    width:100%;
+    margin-top: 90px;
+  }
+  #carouselDiv{
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+  #myCarousel{
+    margin-top: 30px;
+    border-radius: 10px;
+  }
+
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 100%;
+    height: 400px;
+    margin: auto;
+  }
+  .carousel-caption{
+    position: absolute;
+  	right: 20%;
+  	bottom: 20px;
+  	left: 20%;
+  	z-index: 10;
+  	padding-top: 20px;
+  	padding-bottom: 30px;
+  	color: #fff;
+  	text-align: center;
+  }
+  .thumbnail img{
+    height: 150px;
+    width:150px;
+  }
+
+  #top-selling-header {
+    margin-top: 20px;
+    padding-left: 20px;
+  }
+  #thumbnailDiv{
+    height:300px;
+    width:100%;
+    margin-bottom: 30px;;
+
+  }
+  #footerDiv{
+    height:100px;
+    width:100%;
+    background-color: #F2F2F2;
+  }
+
+
+
+
+.controlsBlock {
+   	position: relative;
+   	bottom: 0;
+   	left: 0;
+   	top: 10px;
+   	display: block;
+   	width: 177px;
+   	margin: 0 auto;
+   	z-index: 1;
+   	height: 24px;
+   	text-align: center;
+}
+
+.controls {
+   	position: relative;
+   	display: block;
+}
+
+.carousel-control {
+  	position: absolute;
+  	top: 25.5px;
+  	bottom: 0;
+  	left: 0;
+  	background: #000000;
+  	font-size: 10px;
+  	background: none !important;
+  	color: #000 !important;
+  	text-align: center;
+}
+
+.carousel-control i {
+    	font-size: 20px;
+}
+
+.carousel-control.left {
+  	left: 0;
+}
+
+.carousel-control.right {
+  	right: 0;
+
+}
+
+.carousel-control:hover,
+.carousel-control:focus {
+  	color: #000;
+}
+
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+  	position: absolute;
+  	z-index: 5;
+  	display: inline-block;
+}
+
+.carousel-control .glyphicon-chevron-left {
+  	left: 0;
+}
+
+.carousel-control .glyphicon-chevron-right {
+  	right: 0;
+}
+
+.carousel-indicators {
+  	position: relative;
+  	bottom: 0;
+  	left: 50%;
+  	z-index: 15;
+  	width: 60%;
+  	top: 10px;
+  	padding-left: 0;
+  	margin-left: -30%;
+  	text-align: center;
+  	list-style: none;
+}
+
+
+.carousel-indicators li {
+  	display: inline-block;
+   	zoom: 1;
+   	width: 10px;
+   	height: 10px;
+   	margin: 0 2px;
+   	background: transparent;
+   	-webkit-border-radius: 50%;
+   	-moz-border-radius: 50%;
+   	border-radius: 50%;
+   	border: 3px solid transparent;
+   	-webkit-box-shadow: rgba(0,0,0,0.5) 0 0 2px;
+   	-moz-box-shadow: rgba(0,0,0,0.5) 0 0 2px;
+   	box-shadow: rgba(0,0,0,0.5) 0 0 2px;
+   	cursor: pointer;
+}
+
+.carousel-indicators .active {
+  	width: 10px;
+  	height: 10px;
+  	margin: 0;
+  	background-color: #000000;
+}
+  	.carousel-control .glyphicon-chevron-left,
+  	.carousel-control .glyphicon-chevron-right,
+  	.carousel-control .icon-prev,
+  	.carousel-control .icon-next {
+    		font-size: 15px;
+  	}
+
+  	.carousel-indicators {
+    		bottom: .0;
+  	}
+}
+
+
+
+
+
+</style>

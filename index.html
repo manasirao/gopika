@@ -14,89 +14,14 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <style>
-      html, body {
-        height:100%;
-        margin:0;
-        font-family: serif;
-      }
-      .navbar{
-        margin:0;
-        height: 100px;
-      }
-      #logo{
-        width: 300px;
-        height: 100px;
-        border-radius: 8px;
-        position: relative;
-        top:-16px;
-      }
-      .navbar-brand .navbar-header{
-        margin:0;
-      }
-      .down{
-        padding-top: 50px;
-        font-size: 1.3em;
-        font-weight: bold;
-      }
-      #mainDiv{
-        height:70%;
-        width:100%;
-        background-image: url("fragrance1.jpg");
-        background-position: center;
-        background-size: cover;
+    <link href="main.css" rel="stylesheet">
 
-        background-blend-mode: lighten;
-      }
-      #myCarousel{
-        margin-top: 30px;
-        border-radius: 10px;
-      }
-
-      .carousel-inner > .item > img,
-      .carousel-inner > .item > a > img {
-        width: 100%;
-        height: 400px;
-        margin: auto;
-      }
-      .carousel-caption{
-        font-family: fantasy;
-        padding-top: 10px;
-      }
-      .thumbnail img{
-        height: 150px;
-        width:150px;
-      }
-      h3{
-        padding-left: 20px;
-      }
-      #thumbnailDiv{
-        height:300px;
-        width:100%;
-        background-image: url("fragrance2.jpg");
-        background-position: center;
-
-        background-blend-mode: lighten;
-
-      }
-      #footerDiv{
-        height:200px;
-        width:100%;
-        font-size: 1.2em;
-      }
-      #footerDiv h4{
-        padding-top:20px;
-      }
-      #footerDiv ul{
-        list-style: none;
-      }
-    </style>
   </head>
   <body>
-    <div class="navbar navbar-default ">
+    <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#"><img id="logo" src="images/gopika_logo.png"></a>
+          <a class="navbar-brand" href="#"><span id="logoName"> Gopika Perfumary Works </span>  <img id="logo" src="images/gopika_logo_shorter.jpg"></a>
           <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarCollapsed">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -116,11 +41,11 @@
     </div>
 
     <div class="container" id="mainDiv">
-      <div class="row">
+      <div class="row" id="carouselDiv">
         <div class="col-md-8 col-md-offset-2">
           <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
-            <ol class="carousel-indicators">
+            <!-- <ol class="carousel-indicators">
               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
               <li data-target="#myCarousel" data-slide-to="1"></li>
               <li data-target="#myCarousel" data-slide-to="2"></li>
@@ -132,7 +57,7 @@
                 <img src="images/goodwishes.jpg">
                 <div class="carousel-caption" style="color:#e7ea2c;">
                   <h3 >Good wishes</h3>
-                  <p>write something about product...</p>
+
                 </div>
               </div>
 
@@ -140,7 +65,7 @@
                 <img src="images/savitrisugand.jpg" alt="Chania">
                 <div class="carousel-caption" style="color:#5a5a5a;">
                   <h3 >Savitri Sugand</h3>
-                  <p>write something about product...</p>
+
                 </div>
               </div>
 
@@ -148,29 +73,37 @@
                 <img src="images/vanilla.jpg" alt="Flower">
                 <div class="carousel-caption">
                   <h3>Vanilla</h3>
-                  <p>write something about product...</p>
+
                 </div>
               </div>
-
             </div>
 
+            <div class="controlsBlock">
+              <div class="controls">
             <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+                <div class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="container" id="thumbnailDiv">
-      <div class="row">
-        <h3> Top Selling Products !!! </h3>
+
+
+      <div class="row" id=thumbnailDiv>
+        <h3 id='top-selling-header'> Top Selling Products </h3>
         <div class=" col-md-3">
           <a href="#" class="thumbnail">
             <img src="images/goodwishes.jpg" alt="...">
@@ -197,13 +130,7 @@
     <div class="container" id="footerDiv">
       <div class="row">
         <div class="col-md-3 col-md-offset-1">
-          <h4>Customer Support</h4>
-          <ul>
-            <li><a href="#div1">FAQ</a></li>
-            <li><a href="#div2">Privacy Policy</a></li>
-            <li><a href="#div3">Contact us</a></li>
-
-          </ul>
+          <p>Copyright and Address Information</p>
         </div>
       </div>
     </div>
