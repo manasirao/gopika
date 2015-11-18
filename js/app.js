@@ -20,8 +20,11 @@ app.config(function($stateProvider, $urlRouterProvider) {
         })
         .state('aboutus', {
             url: "/aboutus",
-            template: "<div class='jumbotron' style='padding-left: 50px'><h2> About us: </h2> <p> Simple Template on About us <p> </div>"
+            templateUrl: 'home-tab/about-template.html'
+          })
+        .state('contact', {
+            url: "/contact",
+            templateUrl: 'home-tab/contact-template.html'
         })
 
 });
-
