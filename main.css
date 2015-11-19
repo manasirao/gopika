@@ -61,8 +61,8 @@
 
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
-    width: 100%;
-    height: 400px;
+    width: auto;
+    height: 500px;
     margin: auto;
   }
   .carousel-caption{
@@ -214,23 +214,30 @@
   #aboutDiv{
     margin-top: 75px;
   }
-#brand{
+#brand {
   border-bottom: 1px solid grey;
   width:100%;
 }
-#company{
+
+.mediaDiv{
   font-size: 1.3em;
   font-family:Georgia, "Times New Roman", Times, serif;
+  border-bottom: 1px grey;
+  border-bottom-style: groove;
+  padding: 15px 0 20px 5px;
+
 }
 .media-heading{
   font-weight: bold;
-  padding-bottom:8px;
+  padding-bottom: 5px;
 }
-#ourBrand{
-  margin-top: 30px;
-  text-align:center;
+.media-object{
+  padding: 10px;
+}
+.ourBrand{
+  margin-top: 15px;
   font-size: 1.3em;
-  border-top:1px grey;
-  border-top-style: ridge;
+  border-bottom: :1px grey;
+  border-bottom-style:groove;
   font-family:Georgia, "Times New Roman", Times, serif;
 }
