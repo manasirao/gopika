@@ -22,6 +22,10 @@ app.config(function($stateProvider, $urlRouterProvider) {
             url: "/aboutus",
             templateUrl: 'home-tab/about-template.html'
           })
+        .state('products', {
+              url: "/products",
+              templateUrl: 'home-tab/product-template.html'
+        })
         .state('contact', {
             url: "/contact",
             templateUrl: 'home-tab/contact-template.html'
