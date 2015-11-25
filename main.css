@@ -268,6 +268,10 @@
     margin-bottom: 10px;
 }
 
+.item-hover:hover{
+    box-shadow: 8px 5px 5px rgba(0,0,0,0.8);
+    
+}
 
 .list-group-item-text{
     margin: 0 0 11px;
