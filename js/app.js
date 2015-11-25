@@ -24,7 +24,8 @@ app.config(function($stateProvider, $urlRouterProvider) {
           })
         .state('products', {
               url: "/products",
-              templateUrl: 'home-tab/product-template.html'
+              templateUrl: 'home-tab/product-template.html',
+              controller: 'productCtrl'
         })
         .state('contact', {
             url: "/contact",

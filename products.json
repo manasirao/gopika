@@ -1,0 +1,38 @@
+[
+	{
+		"name": "Black Pearl",
+		"description": "An Exotic fragrance",
+		"type": "box",
+		"brand": "gopika",
+		"price": 350,
+		"sticks": 150,
+		"image": "images/Black-pearl.jpg"
+	},
+	{
+		"name": "Savitri",
+		"description": "An unique blend fragrance",
+		"type": "box",
+		"brand": "savitri",
+		"price": 250,
+		"sticks": 100,
+		"image": "images/savithri_classix.jpg"
+	},
+	{
+		"name": "Rajanigandha",
+		"description": "An unique blend fragrance",
+		"type": "box",
+		"brand": "gandharva",
+		"price": 250,
+		"sticks": 100,
+		"image": "images/Rajanigandha.jpg"
+	},
+	{
+		"name": "Mysore Royal",
+		"description": "An Fine Blend of Natural Oils",
+		"type": "box",
+		"brand": "gopika",
+		"price": 250,
+		"sticks": 100,
+		"image": "images/Mysore_royal.jpg"
+	}
+]
