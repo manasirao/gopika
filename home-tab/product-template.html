@@ -2,43 +2,85 @@
   <div class="row">
     <!--Nav Bar -->
     <nav class="col-xs-2">
-          <ul id="sidebar" class="nav nav-stacked fixed">
-            <li>
-                <a href="/products#cat1">Category 1</a>
-            </li>
-            <li>
-                <a href="/products#cat2">Category 2</a>
+      <form>
+        <div class="left-inner-addon ">
+          <i class="glyphicon glyphicon-search"></i>
+          <input type="search" class="form-control" placeholder="Search" />
+         </div>
 
-            </li>
-            <li>
-                <a href="#cat3">Category 3</a>
+       </form>
+      <div class="checkbox">
+        <label><input type="checkbox"> Category 1</label>
+        <label><input type="checkbox"> Category 2</label>
+        <label><input type="checkbox"> Category 3</label>
+      </div>
 
-            </li>
-        </ul>
     </nav>
     <!--Main Content -->
     <div class="col-xs-9">
-    <div id="products" class="row list-group">
-          <div ng-repeat="p in products">
-           <div class="item col-sm-6 col-md-4">
+
+      <div id="products" class="row">
+        <div ng-repeat="p in products">
+          <div class="item col-sm-6 col-md-4">
             <div class="thumbnail item-hover">
-                <img class="group list-group-image" ng-src="{{p.image}}" alt="" />
-                <div class="caption">
-                    <h4 class="group inner list-group-item-heading">
-                        {{p.name}}</h4>
-                    <p class="group inner list-group-item-text"> {{p.description}}</p>
-                    <div class="row">
-                        <div class="col-xs-10 col-md-5">
-                            <p class="lead">Rs.{{p.price}}</p>
+              <img class="group list-group-image" ng-src="{{p.image}}" alt="" />
+              <div class="caption">
+                <h4 class="group inner list-group-item-heading">{{p.name}}</h4>
+                <p class="group inner list-group-item-text"> {{p.description}}</p>
+                  <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#MyModal">Product Details</button>
+                      <div class="modal" id="MyModal" tabindex="-1">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button class="close" data-dismiss="modal"><span ariahidden="true">&times;</span><span
+                      class="sr-only">x</span></button>
+                              <h4>{{p.name}}</h4>
+                            </div>
+                            <div class="modal-body">
+                              <div class="media">
+                                <div class="media-left media-middle">
+                                  <img class="media-object" ng-src="{{p.image}}" >
+                                </div>
+                                <div class="media-body">
+                                  <h4 class="media-heading"></h4>
+                                  Gopika Perfumery Works is a Mysore based Manufacturer and Exporter of Incense Sticks and Dhoops. Mysore is home to two of the
+                                  most natural and popular of fragrances, namely Sandal and Jasmine.
+                              </div>
+                            </div>
+                            </div>
+                            <div class="modal-footer">
+                              <h5>Contact Us for more details </h5>
+
+                            </div>
+                          </div>
                         </div>
-                        <div class="col-xs-10 col-md-5">
-                            <a class="btn btn-success" href="">Add to cart</a>
-                        </div>
-                    </div>
+                      </div>
+		                </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-        </div>
-     </div>
-</div>
-</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+  $(document)
+    .on('click', '.panel-heading span.clickable', function(e){
+        $(this).parents('.panel').find('.panel-collapse').collapse('toggle');
+    })
+    .on('hide.bs.collapse', '.panel-collapse', function () {
+        var $span = $(this).parents('.panel').find('.panel-heading span.clickable');
+        $span.find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+    })
+    .on('show.bs.collapse', '.panel-collapse', function () {
+        var $span = $(this).parents('.panel').find('.panel-heading span.clickable');
+        $span.find('i').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
+    })
+  </script>

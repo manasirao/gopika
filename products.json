@@ -6,7 +6,8 @@
 		"brand": "gopika",
 		"price": 350,
 		"sticks": 150,
-		"image": "images/Black-pearl.jpg"
+		"image": "images/Black-pearl.jpg",
+		"details":"this is an awesome product"
 	},
 	{
 		"name": "Savitri",
