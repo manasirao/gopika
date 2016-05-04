@@ -3,10 +3,10 @@ var app = angular.module('gopikaApp');
 app.filter('gpwProdType', function() {
     console.log('Gopika Product Type Filter');
 
-    return function(input, isBox, isPouch, isCone) {
+    return function(input, isBox, isPouch, isCone, isEconomy) {
         console.log('Filter: box:' + isBox + 'isPouch:' + isPouch + ' isCone:' + isCone);
         var output = [];
-        if(isBox === false && isPouch === false && isCone === false ) {
+        if(isBox === false && isPouch === false && isCone === false && isEconomy ===false) {
             output = input;
             return output;
         }
@@ -20,6 +20,9 @@ app.filter('gpwProdType', function() {
                 output.push(product);
             }
             if (isCone && product.type === 'cone') {
+                output.push(product);
+            }
+            if (isEconomy && product.type === 'Economy') {
                 output.push(product);
             }
         }

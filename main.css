@@ -220,7 +220,7 @@
 }
 
 .mediaDiv{
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-family:Georgia, "Times New Roman", Times, serif;
   border-bottom: 1px grey;
   border-bottom-style: groove;
@@ -232,11 +232,11 @@
   padding-bottom: 5px;
 }
 .media-object{
-  padding: 10px;
+  padding: 5px;
 }
 .ourBrand{
   margin-top: 15px;
-  font-size: 1.3em;
+  font-size: 1.2em;
   border-bottom:1px grey;
   border-bottom-style:groove;
   font-family:Georgia, "Times New Roman", Times, serif;
@@ -250,27 +250,55 @@
 }
 
 .thumbnail{
+    height: 325px;
     margin-bottom: 20px;
     padding: 0px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     border-radius: 0px;
 }
+.caption{
+  padding:10px;
+}
 .thumbnail img {
+
+}
+
+.list-group-image{
+
+}
+.portrait img {
+    padding: 10px;
+    -webkit-transform: rotate(45deg); /* Safari */
+    transform: rotate(45deg);
     height: 200px;
     width: auto;
 }
-
-.thumbnail.portrait img {
-    -webkit-transform: rotate(45deg); /* Safari */
-    transform: rotate(45deg);
+.list-group-image.straight{
+  height:220px;
+  width: auto ;
+  padding: 10px;
 }
 
-.thumbnail.portrait img {
-    -webkit-transform: rotate(45deg); /* Safari */
-    transform: rotate(45deg);
+.list-group-image.vertical{
+  height:200px;
+  width: 220px ;
+  padding: 50px 0 50px 0;
+}
+.media-left.vertical img{
+    -webkit-transform: rotate(0deg); /* Safari */
+    transform: rotate(0deg);
 }
 
+.modal-body {
+    padding:20px;
+}
+
+.media-object {
+    height: 100px;
+    padding:15px;
+    border: 1px solid grey;
+}
 
 
 .glyphicon { margin-right:5px; }
@@ -343,7 +371,6 @@ input[type=search]:focus {
 	width: 120px;
 	background-color: #fff;
 	border-color: #66CC75;
-
 	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
 	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
 	box-shadow: 0 0 5px rgba(109,207,246,.5);
@@ -356,4 +383,39 @@ input[type=search]:focus {
 
 .modal-backdrop{
   background: none;
+}
+
+
+.sim-products-body {
+    height: calc(100vh - 500px);
+    overflow-y: auto;
+}
+
+.simImage{
+    width: 150px;
+    height: 150px;
+    padding:0 25px 0px 25px;
+}
+.simImage img{
+    float:left;
+    width:auto;
+    height:150px;
+    -webkit-transform: rotate(0deg); /* Safari */
+    transform: rotate(0deg);
+}
+.sim-straight img{
+  float:left;
+  width:125px;
+  height:75px;
+
+}
+
+.sim-square img{
+  float:left;
+  width:auto;
+  height:80px;
+}
+.simImage span{
+    display:block;
+    width:75px;
 }
