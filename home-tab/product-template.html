@@ -22,53 +22,7 @@
 
       <div id="products" class="row">
         <div ng-repeat="p in products | filter:query | gpwProdType:box:pouch:cone:Economy">
-          <div class="item col-sm-6 col-md-4">
-            <div class="thumbnail item-hover" ng-class="{'portrait': p.display.orientation == 'portrait'}">
-              <img class="group list-group-image" ng-src="{{p.image}}" ng-class="{'vertical':p.display.orientation == 'vertical','straight':p.display.orientation == 'straight'}" alt="" />
-              <div class="caption">
-                <h4 class="group inner list-group-item-heading">{{p.name}}</h4>
-                <p class="group inner list-group-item-text"> {{p.description}}</p>
-                  <div class="row">
-                    <div class="col-sm-6 col-md-4">
-                      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#MyModal{{$index}}" ng-click="getProductGroup($index)">Product Details</button>
-                      <div class="modal" id="MyModal{{$index}}" tabindex="-1">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <button class="close" data-dismiss="modal"><span ariahidden="true">&times;</span><span
-                      class="sr-only">x</span></button>
-                              <h4>{{p.name}}</h4>
-                            </div>
-                            <div class="modal-body">
-                              <div class="media">
-                                <div class="media-left media-middle" ng-class="{'vertical':p.display.orientation == 'portrait'}">
-                                  <img class="media-object" ng-src="{{p.image}}" >
-                                </div>
-                                <div class="media-body">
-                                  <h4 class="media-heading"></h4>
-                                  {{p.description}}. <br />
-                                  {{p.details}}
-                                </div>
-                              </div>
-                              <hr/>
-                              <div ng-if="similarProd.length" class="sim-products-body">
-                                <h4>Similar Products </h4>
-                                <div>
-                                  <div class="simImage" ng-repeat="s in similarProd" ng-class="{'sim-straight':s.display.orientation == 'vertical','sim-square':s.display.orientation == 'square'}">
-                                    <img ng-src="{{s.image}}"   alt=""/>
-                                    <span>{{s.name}}</span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div p="p" index="$index" gpw-product-grid></div>
           </div>
         </div>
       </div>
