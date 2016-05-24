@@ -1,39 +1,268 @@
 [
-	{
-		"name": "Black Pearl",
-		"description": "An Exotic fragrance",
-		"type": "box",
-		"brand": "gopika",
-		"price": 350,
-		"sticks": 150,
-		"image": "images/Black-pearl.jpg",
-		"details":"this is an awesome product"
-	},
-	{
-		"name": "Savitri",
-		"description": "An unique blend fragrance",
-		"type": "box",
-		"brand": "savitri",
-		"price": 250,
-		"sticks": 100,
-		"image": "images/savithri_classix.jpg"
-	},
-	{
-		"name": "Rajanigandha",
-		"description": "An unique blend fragrance",
-		"type": "box",
-		"brand": "gandharva",
-		"price": 250,
-		"sticks": 100,
-		"image": "images/Rajanigandha.jpg"
-	},
-	{
-		"name": "Mysore Royal",
-		"description": "An Fine Blend of Natural Oils",
-		"type": "box",
-		"brand": "gopika",
-		"price": 250,
-		"sticks": 100,
-		"image": "images/Mysore_royal.jpg"
-	}
+  {
+      "name": "Black Pearl Box",
+      "description": "An Exotic fragrance",
+      "type": "box",
+      "brand": "gopika",
+      "price": 350,
+      "sticks": 150,
+      "image": "images/products/black-pearl-box.jpg",
+      "productGroup": "blackpearl",
+      "details":"this is an awesome product",
+      "display": {
+        "orientation": "portrait"
+      }
+  },
+  {
+    "name": "Black Pearl Hexagon",
+    "description": "An Exotic fragrance",
+    "type": "hexagon",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "images/products/black-pearl-hex.jpg",
+    "productGroup": "blackpearl",
+    "details":"this is an awesome product",
+    "display": {
+      "orientation": "portrait"
+    }
+  },
+  {
+    "name": "Black Pearl Pouch",
+    "description": "An Exotic fragrance",
+    "type": "pouch",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "images/products/black-pearl-pouch.jpg",
+    "productGroup": "blackpearl",
+    "details": "this is an awesome product",
+    "display": {
+      "orientation": "portrait"
+    }
+  },
+  {
+    "name": "Black Pearl Big Pouch",
+    "description": "An Exotic fragrance",
+    "type": "pouch",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "images/products/black-pearl-zipper-pouch.jpg",
+    "productGroup": "blackpearl",
+    "details":"this is an awesome product",
+    "display": {
+      "orientation": "vertical"
+    }
+  },
+  {
+    "name": "Black Jewel",
+    "description": "An Exotic fragrance",
+    "type": "box",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "images/products/blackjewel-box.jpg",
+    "productGroup": "blackjewel",
+    "details": "this is an awesome product",
+    "display": {
+      "orientation": "portrait"
+    }
+  },
+  {
+    "name": "Champa",
+    "description": "An Exotic fragrance",
+    "type": "box",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "images/products/champa-box.jpg",
+    "productGroup": "champa",
+    "details": "this is an awesome product",
+    "display": {
+      "orientation": "portrait"
+    }
+  },
+  {
+    "name": "Champa Economy",
+    "description": "An Exotic fragrance",
+    "type": "box",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "images/products/champa-eco.jpg",
+    "productGroup": "champa",
+    "details": "this is an awesome product",
+    "display": {
+      "orientation": "portrait"
+    }
+  },
+  {
+    "name": "Dreams",
+    "description": "An Exotic fragrance",
+    "type": "box",
+    "brand": "gandharva",
+    "price": 350,
+    "sticks": 150,
+    "image": "images/products/dreams-box.jpg",
+    "productGroup": "dreams",
+    "details": "this is an awesome product",
+    "display": {
+      "orientation": "portrait"
+    }
+  },
+  {
+    "name": "Dreams Pouch",
+    "description": "An Exotic fragrance",
+    "type": "pouch",
+    "brand": "gandharva",
+    "price": 350,
+    "sticks": 150,
+    "image": "images/products/dreams-zipper-pouch.jpg",
+    "productGroup": "dreams",
+    "details": "this is an awesome product",
+    "display": {
+      "orientation": "vertical"
+    }
+  },
+  {
+    "name": "Gopika",
+    "description": "An Exotic fragrance",
+    "type": "pouch",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "images/products/gopika.jpg",
+    "productGroup": "dreams",
+    "details": "this is an awesome product",
+    "display": {
+      "orientation": "portrait"
+    }
+  },
+  {
+    "name": "Gopika 100",
+    "description": "An Exotic fragrance",
+    "type": "box",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "images/products/gopika100-with-match.jpg",
+    "productGroup": "dreams",
+    "details": "this is an awesome product",
+    "display": {
+      "orientation": "portrait"
+    }
+  },
+  {
+    "name": "Gulab",
+    "description": "An Exotic fragrance",
+    "type": "pouch",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "images/products/gulab-pouch.jpg",
+    "productGroup": "dreams",
+    "details": "this is an awesome product",
+    "display": {
+      "orientation": "portrait"
+    }
+  },
+  {
+    "name": "Kewda",
+    "description": "An Exotic fragrance",
+    "type": "box",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "images/products/kewda.jpg",
+    "productGroup": "dreams",
+    "details": "this is an awesome product",
+    "display": {
+      "orientation": "portrait"
+    }
+  },
+  {
+    "name": "Kewda Economy",
+    "description": "An Exotic fragrance",
+    "type": "eco",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "images/products/kewda-eco.jpg",
+    "productGroup": "dreams",
+    "details": "this is an awesome product",
+    "display": {
+      "orientation": "portrait"
+    }
+  },
+  {
+    "name": "Kewda Pouch",
+    "description": "An Exotic fragrance",
+    "type": "pouch",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "images/products/kewda-pouch.jpg",
+    "productGroup": "dreams",
+    "details": "this is an awesome product",
+    "display": {
+      "orientation": "portrait"
+    }
+  },
+  {
+    "name": "Lovely Amber",
+    "description": "An Exotic fragrance",
+    "type": "cone",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "images/products/lovelyamber-cone.jpg",
+    "productGroup": "dreams",
+    "details": "this is an awesome product",
+    "display": {
+      "orientation": "vertical"
+    }
+  },
+  {
+    "name": "Lovely Musk",
+    "description": "An Exotic fragrance",
+    "type": "cone",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "images/products/lovelymusk-cone.jpg",
+    "productGroup": "dreams",
+    "details": "this is an awesome product",
+    "display": {
+      "orientation": "vertical"
+    }
+  },
+  {
+    "name": "Lovely Rose",
+    "description": "An Exotic fragrance",
+    "type": "cone",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "images/products/lovelyrose-cone.jpg",
+    "productGroup": "dreams",
+    "details": "this is an awesome product",
+    "display": {
+      "orientation": "vertical"
+    }
+  },
+  {
+    "name": "Lovely Rose",
+    "description": "An Exotic fragrance",
+    "type": "cone",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "images/products/lovelyrose-cone.jpg",
+    "productGroup": "dreams",
+    "details": "this is an awesome product",
+    "display": {
+      "orientation": "vertical"
+    }
+  }
 ]

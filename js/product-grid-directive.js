@@ -1,10 +1,7 @@
-var app = angular.module('gopikaApp');
-
-var productGrid = function() {
+module.exports = function(ProductGridTemplate) {
     console.log("Gpw Product Grid Template");
     return {
         restrict: 'A',
-        templateUrl: 'js/product-grid-template.html'
+        template: ProductGridTemplate
     };
 };
-app.directive('gpwProductGrid', productGrid);
