@@ -1,9 +1,10 @@
-module.exports = function($stateProvider, $urlRouterProvider, MainTemplate, AboutTemplate, ProductTemplate, ContactTemplate) {
+module.exports = function($stateProvider, $urlRouterProvider, HomeTemplate, AboutTemplate, ProductTemplate, ContactTemplate) {
     $urlRouterProvider.otherwise('/');
     $stateProvider
         .state('home', {
             url: "/",
-            template: MainTemplate
+            template: HomeTemplate,
+            controller: 'homeCtrl'
         })
         .state('aboutus', {
             url: "/aboutus",
@@ -19,4 +20,3 @@ module.exports = function($stateProvider, $urlRouterProvider, MainTemplate, Abou
             template: ContactTemplate
         });
 };
-

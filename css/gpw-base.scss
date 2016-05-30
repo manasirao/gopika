@@ -1,0 +1,40 @@
+body {
+  min-height: 800px;
+  min-width: 800px;
+  overflow: auto;
+}
+
+#logoName {
+  float: right;
+  color: white;
+  padding: 8px 0 0 15px;
+  font-size: 1.4em;
+}
+
+#logo {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  position: relative;
+  top: -9px;
+}
+
+.copyright {
+  top: 45%;
+  font-size: 1.2em;
+}
+
+#gopikaContainer {
+  min-height: calc(100vh - 20px);
+  display: block;
+  background-image: url("../images/mysore-palace-bg.png");
+  background-repeat:round;
+}
+
+#footerDiv {
+  position: relative;
+  height: 80px;
+  width: 100%;
+  background-color: #F2F2F2;
+}
+

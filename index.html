@@ -9,11 +9,11 @@
 
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
-    <link href="styles/main.css" rel="stylesheet">
-
+    <link href="styles/gopika.css" rel="stylesheet">
   </head>
   <body>
-   <div ng-app="gopikaApp">
+
+   <div  ng-app="gopikaApp">
        <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
            <div class="container-fluid">
             <div class="navbar-header">
@@ -36,7 +36,7 @@
           </div>
         </nav>
 
-      <div class="container">
+      <div id="gopikaContainer">
           <!-- main content -->
           <div class="row" ui-view> </div>
       </div>
@@ -64,8 +64,6 @@
                $(".navbar-collapse").collapse('hide');
            });
        });
-
-      $(".container").css("min-height",$(window).height());
 
    </script>
 

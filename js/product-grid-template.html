@@ -1,6 +1,7 @@
 <div class="item col-sm-6 col-md-4">
-    <div class="thumbnail item-hover" ng-class="{'portrait': p.display.orientation == 'portrait'}">
-        <img class="group list-group-image" ng-src="{{p.image}}" ng-class="{'vertical':p.display.orientation == 'vertical','straight':p.display.orientation == 'straight'}" alt="" />
+    <!-- <div class="thumbnail item-hover" ng-class="{'portrait': p.display.orientation == 'portrait'}"> -->
+    <div class="thumbnail item-hover" ng-class="{'portrait': p.display.orientation == 'portrait', 'landscape':p.display.orientation == 'landscape','straight':p.display.orientation == 'straight'}">
+        <img class="group list-group-image" ng-src="{{p.image}}"  alt="" />
         <div class="caption">
             <h4 class="group inner list-group-item-heading">{{p.name}}</h4>
             <p class="group inner list-group-item-text"> {{p.description}}</p>
