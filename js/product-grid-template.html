@@ -1,7 +1,7 @@
 <div class="item col-sm-6 col-md-4">
     <!-- <div class="thumbnail item-hover" ng-class="{'portrait': p.display.orientation == 'portrait'}"> -->
     <div class="thumbnail item-hover" ng-class="{'portrait': p.display.orientation == 'portrait', 'landscape':p.display.orientation == 'landscape','straight':p.display.orientation == 'straight'}">
-        <img class="group list-group-image" ng-src="{{p.image}}"  alt="" />
+        <img class="group list-group-image" ng-src="images/products/{{p.image}}"  alt="" />
         <div class="caption">
             <h4 class="group inner list-group-item-heading">{{p.name}}</h4>
             <p class="group inner list-group-item-text"> {{p.description}}</p>
@@ -19,7 +19,7 @@
                                 <div class="modal-body">
                                     <div class="media">
                                         <div class="media-left media-middle" ng-class="{'vertical':p.display.orientation == 'portrait'}">
-                                            <img class="media-object" ng-src="{{p.image}}" >
+                                            <img class="media-object" ng-src="images/products/{{p.image}}" >
                                         </div>
                                         <div class="media-body">
                                             <h4 class="media-heading"></h4>

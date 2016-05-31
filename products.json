@@ -7,9 +7,10 @@
     "brand": "gopika",
     "price": 350,
     "sticks": 150,
-    "image": "images/products/black-pearl-box.jpg",
+    "image": "black-pearl-box.jpg",
+    "fimage": "black-pearl-box.png",
     "productGroup": "blackpearl",
-    "details": "this is an awesome product",
+    "details": "This is an awesome product",
     "display": {
       "orientation": "portrait"
     }
@@ -22,7 +23,7 @@
     "brand": "gopika",
     "price": 350,
     "sticks": 150,
-    "image": "images/products/black-pearl-hex.jpg",
+    "image": "black-pearl-hex.jpg",
     "productGroup": "blackpearl",
     "details": "this is an awesome product",
     "display": {
@@ -37,7 +38,7 @@
     "brand": "gopika",
     "price": 350,
     "sticks": 150,
-    "image": "images/products/black-pearl-pouch.jpg",
+    "image": "black-pearl-pouch.jpg",
     "productGroup": "blackpearl",
     "details": "this is an awesome product",
     "display": {
@@ -51,8 +52,24 @@
     "brand": "gopika",
     "price": 350,
     "sticks": 150,
-    "image": "images/products/black-pearl-zipper-pouch.jpg",
+    "image": "black-pearl-zipper-pouch.jpg",
     "productGroup": "blackpearl",
+    "details": "this is an awesome product",
+    "display": {
+      "orientation": "portrait"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Mysore Royal",
+    "description": "An Exotic fragrance",
+    "type": "box",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "mysoreroyal-box.jpg",
+    "fimage": "mysoreroyal-box.png",
+    "productGroup": "mysoreroyal",
     "details": "this is an awesome product",
     "display": {
       "orientation": "portrait"
@@ -65,8 +82,38 @@
     "brand": "gopika",
     "price": 350,
     "sticks": 150,
-    "image": "images/products/blackjewel-box.jpg",
+    "image": "blackjewel-box.jpg",
     "productGroup": "blackjewel",
+    "details": "this is an awesome product",
+    "display": {
+      "orientation": "portrait"
+    }
+  },
+  {
+    "name": "Gopika Natural",
+    "description": "An Exotic fragrance",
+    "type": "box",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "natural.jpg",
+    "fimage": "natural.png",
+    "productGroup": "Natural",
+    "details": "this is an awesome product",
+    "display": {
+      "orientation": "portrait"
+    }
+  },
+  {
+    "name": "Shivalaya",
+    "description": "An Exotic fragrance",
+    "type": "box",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "shivalaya-box.jpg",
+    "fimage": "shivalaya.png",
+    "productGroup": "Shivalaya",
     "details": "this is an awesome product",
     "display": {
       "orientation": "portrait"
@@ -79,7 +126,7 @@
     "brand": "gopika",
     "price": 350,
     "sticks": 150,
-    "image": "images/products/champa-box.jpg",
+    "image": "champa-box.jpg",
     "productGroup": "champa",
     "details": "this is an awesome product",
     "display": {
@@ -93,7 +140,7 @@
     "brand": "gopika",
     "price": 350,
     "sticks": 150,
-    "image": "images/products/champa-eco.jpg",
+    "image": "champa-eco.jpg",
     "productGroup": "champa",
     "details": "this is an awesome product",
     "display": {
@@ -107,7 +154,7 @@
     "brand": "gandharva",
     "price": 350,
     "sticks": 150,
-    "image": "images/products/dreams-box.jpg",
+    "image": "dreams-box.jpg",
     "productGroup": "dreams",
     "details": "this is an awesome product",
     "display": {
@@ -121,7 +168,7 @@
     "brand": "gandharva",
     "price": 350,
     "sticks": 150,
-    "image": "images/products/dreams-zipper-pouch.jpg",
+    "image": "dreams-zipper-pouch.jpg",
     "productGroup": "dreams",
     "details": "this is an awesome product",
     "display": {
@@ -135,7 +182,7 @@
     "brand": "gopika",
     "price": 350,
     "sticks": 150,
-    "image": "images/products/gopika.jpg",
+    "image": "gopika.jpg",
     "productGroup": "dreams",
     "details": "this is an awesome product",
     "display": {
@@ -149,7 +196,7 @@
     "brand": "gopika",
     "price": 350,
     "sticks": 150,
-    "image": "images/products/gopika100-with-match.jpg",
+    "image": "gopika100-with-match.jpg",
     "productGroup": "dreams",
     "details": "this is an awesome product",
     "display": {
@@ -163,7 +210,7 @@
     "brand": "gopika",
     "price": 350,
     "sticks": 150,
-    "image": "images/products/gulab-pouch.jpg",
+    "image": "gulab-pouch.jpg",
     "productGroup": "dreams",
     "details": "this is an awesome product",
     "display": {
@@ -177,7 +224,7 @@
     "brand": "gopika",
     "price": 350,
     "sticks": 150,
-    "image": "images/products/kewda.jpg",
+    "image": "kewda.jpg",
     "productGroup": "dreams",
     "details": "this is an awesome product",
     "display": {
@@ -191,7 +238,7 @@
     "brand": "gopika",
     "price": 350,
     "sticks": 150,
-    "image": "images/products/kewda-eco.jpg",
+    "image": "kewda-eco.jpg",
     "productGroup": "dreams",
     "details": "this is an awesome product",
     "display": {
@@ -205,7 +252,7 @@
     "brand": "gopika",
     "price": 350,
     "sticks": 150,
-    "image": "images/products/kewda-pouch.jpg",
+    "image": "kewda-pouch.jpg",
     "productGroup": "dreams",
     "details": "this is an awesome product",
     "display": {
@@ -219,7 +266,7 @@
     "brand": "gopika",
     "price": 350,
     "sticks": 150,
-    "image": "images/products/lovelyamber-cone.jpg",
+    "image": "lovelyamber-cone.jpg",
     "productGroup": "dreams",
     "details": "this is an awesome product",
     "display": {
@@ -233,7 +280,7 @@
     "brand": "gopika",
     "price": 350,
     "sticks": 150,
-    "image": "images/products/lovelymusk-cone.jpg",
+    "image": "lovelymusk-cone.jpg",
     "productGroup": "dreams",
     "details": "this is an awesome product",
     "display": {
@@ -247,7 +294,7 @@
     "brand": "gopika",
     "price": 350,
     "sticks": 150,
-    "image": "images/products/lovelyrose-cone.jpg",
+    "image": "lovelyrose-cone.jpg",
     "productGroup": "dreams",
     "details": "this is an awesome product",
     "display": {
@@ -261,7 +308,7 @@
     "brand": "gopika",
     "price": 350,
     "sticks": 150,
-    "image": "images/products/lovelyrose-cone.jpg",
+    "image": "lovelyrose-cone.jpg",
     "productGroup": "dreams",
     "details": "this is an awesome product",
     "display": {

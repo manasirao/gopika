@@ -27,7 +27,7 @@ module.exports = function(grunt) {
         },
         watch: {
             dist: {
-                files: ['css/*.scss', 'css/*.css', 'products.json', 'Gruntfile.js', 'js/**/*.js', 'js/**/*.html',  'templates/**/*.html', 'index.html'],
+                files: ['css/*.scss', 'css/*.css', 'featured-products.json', 'products.json', 'Gruntfile.js', 'js/**/*.js', 'js/**/*.html',  'templates/**/*.html', 'index.html'],
                 tasks: ['buildDev']
             }
         },
