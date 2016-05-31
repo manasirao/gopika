@@ -7,11 +7,12 @@
 #featured {
   position: relative;
   top: 30px;
+  left: 20px;
   margin: 20px 10px 60px 0px;
   padding-bottom: 30px;
   //background-image: linear-gradient(rgba(18, 18, 18, 0.84), rgba(164, 164, 164, 0.8)); //rgba(164, 164, 164, 0.8);
   background-image: linear-gradient(rgb(6, 24, 34), rgb(239, 217, 141)); //rgba(164, 164, 164, 0.8);
-  width: 100%;
+  width: 96%;
   .title {
     display: block;
     margin-top: 20px;
@@ -32,7 +33,7 @@
   margin-top: 5px;
   margin-left: 20px;
   margin-bottom: 15px;
-  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.8); //, 4px 2px 6px rgba(10, 10, 10, 0.6);
+  box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.6); //, 4px 2px 6px rgba(10, 10, 10, 0.6);
   border-radius: 10px;
 }
 
