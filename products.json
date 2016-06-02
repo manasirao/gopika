@@ -3,6 +3,7 @@
     "id": 1,
     "name": "Black Pearl Box",
     "description": "An Exotic fragrance",
+    "flavor": "fruity",
     "type": "box",
     "brand": "gopika",
     "price": 350,
@@ -19,13 +20,14 @@
     "id": 2,
     "name": "Black Pearl Hexagon",
     "description": "An Exotic fragrance",
+    "flavor": "fruity",
     "type": "hexagon",
     "brand": "gopika",
     "price": 350,
     "sticks": 150,
     "image": "black-pearl-hex.jpg",
     "productGroup": "blackpearl",
-    "details": "this is an awesome product",
+    "details": "This is an awesome product",
     "display": {
       "orientation": "portrait"
     }
@@ -34,6 +36,7 @@
     "id": 3,
     "name": "Black Pearl Pouch",
     "description": "An Exotic fragrance",
+    "flavor": "fruity",
     "type": "pouch",
     "brand": "gopika",
     "price": 350,
@@ -76,22 +79,40 @@
     }
   },
   {
+    "id": 3,
+    "name": "Mogra",
+    "description": "Sweet and Fresh fragrance",
+    "flavor": "floral",
+    "type": "box",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "mogra.jpg",
+    "productGroup": "mogra",
+    "details": "This is an awesome product",
+    "display": {
+      "orientation": "portrait"
+    }
+  },
+  {
     "name": "Black Jewel",
     "description": "An Exotic fragrance",
+    "flavor": "fruity",
     "type": "box",
     "brand": "gopika",
     "price": 350,
     "sticks": 150,
     "image": "blackjewel-box.jpg",
     "productGroup": "blackjewel",
-    "details": "this is an awesome product",
+    "details": "This is an awesome product",
     "display": {
       "orientation": "portrait"
     }
   },
   {
     "name": "Gopika Natural",
-    "description": "An Exotic fragrance",
+    "description": "A traditional blend of natural aromas",
+    "flavor": "woody",
     "type": "box",
     "brand": "gopika",
     "price": 350,
@@ -121,98 +142,103 @@
   },
   {
     "name": "Champa",
-    "description": "An Exotic fragrance",
+    "description": "Inspired Floral",
+    "flavor": "floral",
     "type": "box",
     "brand": "gopika",
     "price": 350,
     "sticks": 150,
     "image": "champa-box.jpg",
     "productGroup": "champa",
-    "details": "this is an awesome product",
+    "details": "A blend inspired by Champa flowers",
     "display": {
       "orientation": "portrait"
     }
   },
   {
     "name": "Champa Economy",
-    "description": "An Exotic fragrance",
+    "description": "Inspired Floral",
     "type": "box",
     "brand": "gopika",
     "price": 350,
     "sticks": 150,
     "image": "champa-eco.jpg",
     "productGroup": "champa",
-    "details": "this is an awesome product",
+    "details": "A blend inspired by Exotic Champa flowers",
     "display": {
       "orientation": "portrait"
     }
   },
   {
     "name": "Dreams",
-    "description": "An Exotic fragrance",
+    "description": "Soothing Aromatic Blend",
+    "flavor": "blend",
     "type": "box",
     "brand": "gandharva",
     "price": 350,
     "sticks": 150,
     "image": "dreams-box.jpg",
     "productGroup": "dreams",
-    "details": "this is an awesome product",
+    "details": "This is an awesome product",
     "display": {
       "orientation": "portrait"
     }
   },
   {
     "name": "Dreams Pouch",
-    "description": "An Frangrance of dreams",
+    "description": "Soothing Aromatic Blend",
     "type": "pouch",
     "brand": "gandharva",
     "price": 350,
     "sticks": 150,
     "image": "dreams-zipper-pouch.jpg",
     "productGroup": "dreams",
-    "details": "this is an awesome product",
+    "details": "This is an awesome product",
     "display": {
       "orientation": "portrait"
     }
   },
   {
     "name": "Gopika",
-    "description": "An Exotic fragrance",
+    "description": "A House Classic",
+    "flavor": "blend",
     "type": "pouch",
     "brand": "gopika",
     "price": 350,
     "sticks": 150,
     "image": "gopika.jpg",
     "productGroup": "dreams",
-    "details": "this is an awesome product",
+    "details": "This is an awesome product",
     "display": {
       "orientation": "portrait"
     }
   },
   {
     "name": "Gopika 100",
-    "description": "An Exotic fragrance",
+    "description": "A House Classic",
+    "flavor": "blend",
     "type": "box",
     "brand": "gopika",
     "price": 350,
     "sticks": 150,
     "image": "gopika100-with-match.jpg",
     "productGroup": "dreams",
-    "details": "this is an awesome product",
+    "details": "This is an awesome product",
     "display": {
       "orientation": "portrait"
     }
   },
   {
     "name": "Gulab",
-    "description": "An Exotic fragrance",
+    "description": "Traditional Rose",
+    "flavor": "floral",
     "type": "pouch",
     "brand": "gopika",
     "price": 350,
     "sticks": 150,
     "image": "gulab-pouch.jpg",
-    "productGroup": "dreams",
-    "details": "this is an awesome product",
+    "productGroup": "gulab",
+    "details": "This is an Awesome product",
     "display": {
       "orientation": "portrait"
     }
@@ -220,13 +246,14 @@
   {
     "name": "Kewda",
     "description": "An Exotic fragrance",
+    "flavor": "floral",
     "type": "box",
     "brand": "gopika",
     "price": 350,
     "sticks": 150,
     "image": "kewda.jpg",
     "productGroup": "dreams",
-    "details": "this is an awesome product",
+    "details": "This is an awesome product",
     "display": {
       "orientation": "portrait"
     }
@@ -234,13 +261,14 @@
   {
     "name": "Kewda Economy",
     "description": "An Exotic fragrance",
+    "flavor": "floral",
     "type": "eco",
     "brand": "gopika",
     "price": 350,
     "sticks": 150,
     "image": "kewda-eco.jpg",
     "productGroup": "dreams",
-    "details": "this is an awesome product",
+    "details": "This is an awesome product",
     "display": {
       "orientation": "portrait"
     }
@@ -260,14 +288,31 @@
     }
   },
   {
+    "name": "Lovely Sandal",
+    "description": "Embodies Rich Mysore Traditional Aroma",
+    "flavor": "woody",
+    "type": "box",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "lovelysandal-box.jpg",
+    "productGroup": "sandal",
+    "details": "This is an Awesome product",
+    "display": {
+      "orientation": "portrait"
+    }
+  },
+
+  {
     "name": "Lovely Amber",
-    "description": "An Exotic fragrance",
+    "description": "Warm and Natural Aroma",
+    "flavor": "warm",
     "type": "cone",
     "brand": "gopika",
     "price": 350,
     "sticks": 150,
     "image": "lovelyamber-cone.jpg",
-    "productGroup": "dreams",
+    "productGroup": "musk",
     "details": "this is an awesome product",
     "display": {
       "orientation": "landscape"
@@ -275,13 +320,14 @@
   },
   {
     "name": "Lovely Musk",
-    "description": "An Exotic fragrance",
+    "description": "Warm and Natural Aroma",
+    "flavor": "warm",
     "type": "cone",
     "brand": "gopika",
     "price": 350,
     "sticks": 150,
     "image": "lovelymusk-cone.jpg",
-    "productGroup": "dreams",
+    "productGroup": "musk",
     "details": "this is an awesome product",
     "display": {
       "orientation": "landscape"
@@ -289,30 +335,48 @@
   },
   {
     "name": "Lovely Rose",
-    "description": "An Exotic fragrance",
+    "description": "An Unique Rose Blend",
+    "flavor": "floral",
     "type": "cone",
     "brand": "gopika",
     "price": 350,
     "sticks": 150,
     "image": "lovelyrose-cone.jpg",
-    "productGroup": "dreams",
+    "productGroup": "rose",
     "details": "this is an awesome product",
     "display": {
       "orientation": "landscape"
     }
   },
   {
-    "name": "Lovely Rose",
-    "description": "An Exotic fragrance",
+    "name": "Lovely Sandal",
+    "description": "Embodies Rich Mysore Traditional Aroma",
+    "flavor": "woody",
     "type": "cone",
     "brand": "gopika",
     "price": 350,
     "sticks": 150,
-    "image": "lovelyrose-cone.jpg",
-    "productGroup": "dreams",
+    "image": "lovelysandal-cone.jpg",
+    "productGroup": "sandal",
+    "details": "this is an awesome product",
+    "display": {
+      "orientation": "landscape"
+    }
+  },
+  {
+    "name": "Lovely Vanilla",
+    "description": "Rich Flavors",
+    "flavor": "woody",
+    "type": "cone",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "lovelyvanilla-cone.jpg",
+    "productGroup": "musk",
     "details": "this is an awesome product",
     "display": {
       "orientation": "landscape"
     }
   }
+
 ]
