@@ -27,20 +27,19 @@
         </div>
       </div>
     </div>
+    <script>
+    $(document)
+                .on('click', '.panel-heading span.clickable', function(e){
+                    $(this).parents('.panel').find('.panel-collapse').collapse('toggle');
+                })
+                .on('hide.bs.collapse', '.panel-collapse', function () {
+                    var $span = $(this).parents('.panel').find('.panel-heading span.clickable');
+                    $span.find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+                })
+                .on('show.bs.collapse', '.panel-collapse', function () {
+                    var $span = $(this).parents('.panel').find('.panel-heading span.clickable');
+                    $span.find('i').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
+                })
+    </script>
+    </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script>
-  $(document)
-    .on('click', '.panel-heading span.clickable', function(e){
-        $(this).parents('.panel').find('.panel-collapse').collapse('toggle');
-    })
-    .on('hide.bs.collapse', '.panel-collapse', function () {
-        var $span = $(this).parents('.panel').find('.panel-heading span.clickable');
-        $span.find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
-    })
-    .on('show.bs.collapse', '.panel-collapse', function () {
-        var $span = $(this).parents('.panel').find('.panel-heading span.clickable');
-        $span.find('i').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
-    })
-  </script>
