@@ -24,7 +24,12 @@ body {
   color: white;
   margin-bottom: 5px;
   text-align: center;
-  padding: 10px;
+  padding: 8px;
+}
+
+.footercontact {
+  display: block;
+  font-size: 12px;
 }
 
 .copyright {
@@ -34,11 +39,16 @@ body {
 @media (min-width: 768px) {
   #footerDiv {
     min-height: 60px;
-    padding: 15px;
+    padding: 12px;
   }
 
   .copyright {
     font-size: 18px;
+  }
+
+  .footercontact {
+    display: block;
+    font-size: 14px;
   }
 }
 
