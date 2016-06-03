@@ -111,9 +111,10 @@ input::-webkit-search-cancel-button {
 }
 
 input[type=search] {
+  margin-left: 10px;
   border: solid 1px #ccc;
-  padding: 5px 10px 5px 32px;
-  width: 55px;
+  padding: 5px 20px 5px 35px;
+  width: 60%;
   -webkit-border-radius: 10em;
   -moz-border-radius: 10em;
   border-radius: 10em;
@@ -124,7 +125,8 @@ input[type=search] {
 }
 
 input[type=search]:focus {
-  width: 120px;
+  margin-left: 5px;
+  width: 75%;
   background-color: #fff;
   border-color: #66CC75;
   -webkit-box-shadow: 0 0 5px rgba(109, 207, 246, .5);
@@ -132,9 +134,13 @@ input[type=search]:focus {
   box-shadow: 0 0 5px rgba(109, 207, 246, .5);
 }
 
+.checkbox {
+  padding-left: 25px;
+}
+
 .checkbox label {
   font-size: 1.1em;
-  padding: 5px 5px;
+  padding: 5px 20px 5px 20px;
 }
 
 .modal-backdrop {

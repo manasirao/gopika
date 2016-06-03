@@ -1,10 +1,10 @@
 <div class="container" id="productDiv">
   <div class="row">
     <!--Nav Bar -->
-    <nav class="col-xs-2">
+    <nav class="col-md-2">
       <form>
-        <div class="left-inner-addon ">
-          <i class="glyphicon glyphicon-search"></i>
+        <div class="left-inner-addon">
+          <i class="glyphicon glyphicon-search" style="margin-left: 5px;"></i>
           <input ng-model="query" type="search" class="form-control" placeholder="Search" />
          </div>
 
@@ -18,7 +18,7 @@
 
     </nav>
     <!--Main Content -->
-    <div class="col-xs-9">
+    <div class="col-md-9">
 
       <div id="products" class="row">
         <div ng-repeat="p in products | filter:query | gpwProdType:box:pouch:cone:Economy">
