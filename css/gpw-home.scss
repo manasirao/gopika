@@ -3,26 +3,6 @@
   width: 100%;
 }
 
-#logoName {
-  float: right;
-  color: white;
-  padding: 8px 0 0 15px;
-  font-size: 22px;
-  font-weight: bold;
-}
-
-#logo {
-  display: inline-block;
-  float: left;
-  width: 80px;
-  height: auto;
-  border-radius: 8px;
-  position: relative;
-  top: 2px;
-  display: none;
-}
-
-
 #featured {
   position: relative;
   top: 30px;
@@ -123,18 +103,6 @@
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
-  #logo {
-    width: 95px;
-    top: 1px;
-    display: block;
-    position: relative;
-  }
-
-  #logoName {
-    font-size: 24px;
-    font-weight: bold;
-  }
-
   .fitem { height: 180px; }
 
   .motto-emphasis {
@@ -162,18 +130,6 @@
 @media (min-width: 992px) {
   .fitem { height: 180px; }
 
-  #logo {
-    width: 140px;
-    top: -9px;
-    display: block;
-    position: relative;
-  }
-
-  #logoName {
-    font-size: 28px;
-    font-weight: bold;
-  }
-
   .motto-emphasis {
     font-weight: bold;
     font-size: 36px;
@@ -195,12 +151,6 @@
 }
 
 @media (min-width: 1200px) {
-  #logo {
-    width: 140px;
-    top: -9px;
-    position: relative;
-  }
-
   .motto-emphasis {
     font-weight: bold;
     font-size: 40px;

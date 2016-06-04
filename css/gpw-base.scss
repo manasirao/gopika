@@ -36,7 +36,46 @@ body {
   font-size: 14px;
 }
 
+#logoName {
+  float: right;
+  color: white;
+  padding: 8px 0 0 15px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+#logo {
+  display: inline-block;
+  float: left;
+  width: 80px;
+  height: auto;
+  border-radius: 8px;
+  position: relative;
+  top: 2px;
+  display: none;
+}
+
+
+.gpwMenu {
+  font-size: 1.2em !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+
 @media (min-width: 768px) {
+
+  #logo {
+    width: 95px;
+    top: 1px;
+    display: block;
+    position: relative;
+  }
+
+  #logoName {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
   #footerDiv {
     min-height: 60px;
     padding: 12px;
@@ -49,6 +88,38 @@ body {
   .footercontact {
     display: block;
     font-size: 14px;
+  }
+}
+
+@media (min-width: 820px) {
+  #logoName {
+    font-size: 24px;
+  }
+
+  .gpwMenu {
+    font-size: 1.2em !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .gpwMenu {
+    font-size: 1.3em !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  #logo {
+    width: 140px;
+    top: -9px;
+    display: block;
+    position: relative;
+  }
+
+  #logoName {
+    font-size: 28px;
+    font-weight: bold;
   }
 }
 
