@@ -1,10 +1,10 @@
-<div class="item col-sm-6 col-md-4">
+<div class="item col-sm-6 col-md-4 gpw-custom-grid">
     <!-- <div class="thumbnail item-hover" ng-class="{'portrait': p.display.orientation == 'portrait'}"> -->
-    <div class="thumbnail item-hover" ng-class="{'portrait': p.display.orientation == 'portrait', 'landscape':p.display.orientation == 'landscape','straight':p.display.orientation == 'straight'}">
-        <img class="group list-group-image" ng-src="images/products/{{p.image}}"  alt="" />
+    <div class="thumbnail item-hover">
+        <img class="group list-group-image" ng-class="{'portrait': p.display.orientation == 'portrait', 'landscape':p.display.orientation == 'landscape','straight':p.display.orientation == 'straight'}" ng-src="images/products/{{p.image}}"  alt="" />
         <div class="caption">
             <h4 class="group inner list-group-item-heading">{{p.name}}</h4>
-            <p class="group inner list-group-item-text"> {{p.description}}</p>
+            <!--<p class="group inner list-group-item-text"> {{p.description}}</p> -->
             <div class="row">
                 <div class="col-sm-6 col-md-4">
                     <!-- <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#MyModal{{$index}}" ng-click="getProductGroup($index)" ng-disabled=checked">Product Details</button>-->

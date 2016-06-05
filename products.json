@@ -59,7 +59,7 @@
     "productGroup": "blackpearl",
     "details": "this is an awesome product",
     "display": {
-      "orientation": "portrait"
+      "orientation": "landscape"
     }
   },
   {
@@ -195,7 +195,7 @@
     "productGroup": "dreams",
     "details": "This is an awesome product",
     "display": {
-      "orientation": "portrait"
+      "orientation": "landscape"
     }
   },
   {

@@ -2,20 +2,27 @@
   <div class="row">
     <!--Nav Bar -->
     <nav class="col-md-2">
-      <form>
-        <div class="left-inner-addon">
-          <i class="glyphicon glyphicon-search" style="margin-left: 5px;"></i>
-          <input ng-model="query" type="search" class="form-control" placeholder="Search" />
-         </div>
-
-       </form>
-      <div class="checkbox">
-        <div> <label><input type="checkbox" ng-model="box"> Box </label> </div>
-        <div> <label><input type="checkbox" ng-model="pouch"> Pouch</label> </div>
-        <div> <label><input type="checkbox" ng-model="cone"> Cone</label></div>
-        <div> <label><input type="checkbox" ng-model="Economy"> Economy</label></div>
-      </div>
-
+        <div class="row">
+            <form class="col-md-12 col-sm-12 col-xs-12">
+                <div class="left-inner-addon">
+                    <i class="glyphicon glyphicon-search" style="margin-left: 5px;"></i>
+                    <input ng-model="query" type="search" class="form-control" placeholder="Search" />
+                </div>
+            </form>
+        </div>
+        <div class="row checkbox">
+            <div class="col-md-12 col-sm-6"> <div class="gpw-filter-heading"> Aroma </div>
+                <div> <label><input type="checkbox" ng-model="floral">Floral</label></div>
+                <div> <label><input type="checkbox" ng-model="woody">Woody</label> </div>
+                <div> <label><input type="checkbox" ng-model="fruity">Fruity</label> </div>
+                <div> <label><input type="checkbox" ng-model="blend">Blend</label></div>
+            </div>
+            <div class="col-md-12 col-sm-6"><div class="gpw-filter-heading"> Packaging </div>
+                <div> <label><input type="checkbox" ng-model="box">Box </label> </div>
+                <div> <label><input type="checkbox" ng-model="pouch">Pouch</label> </div>
+                <div> <label><input type="checkbox" ng-model="cone">Cone</label></div>
+            </div>
+        </div>
     </nav>
     <!--Main Content -->
     <div class="col-md-9">

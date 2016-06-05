@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Gopika Perfumary Works</title>
 
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic' rel='stylesheet' type='text/css'>
@@ -13,8 +12,7 @@
     <link href="styles/gopika.css" rel="stylesheet">
   </head>
   <body>
-
-   <div  ng-app="gopikaApp">
+   <div ng-app="gopikaApp">
        <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
            <div class="container-fluid">
             <div class="navbar-header">
@@ -38,7 +36,6 @@
             </div>
           </div>
         </nav>
-
       <div id="gopikaContainer">
           <!-- main content -->
           <div class="row" ui-view> </div>
@@ -62,13 +59,12 @@
     <script src="js/main.js"></script>
 
    <script>
-       /* This one will collapse the mobile menu*/
+       /* This one will collapse the mobile menu */
        $(document).ready(function () {
            $(".navbar-nav li a").click(function(event) {
                $(".navbar-collapse").collapse('hide');
            });
        });
-
    </script>
 
   </body>
