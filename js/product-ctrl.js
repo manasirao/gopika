@@ -1,10 +1,49 @@
 module.exports = function($scope, gpwResource) {
 	console.log('Product Controller Initialized');
+
+    $scope.typeFilter = {
+        box: true,
+        cone: true,
+        pouch: true
+    };
+
+    $scope.flavorFilter = {
+        woody: true,
+        floral: true,
+        blend: true,
+        fruity: true
+    };
+
+    $scope.resetFilters = function() {
+        $scope.typeFilter = {box: true, cone: true, pouch: true};
+        $scope.flavorFilter = {woody: true, floral: true, blend: true, fruity: true};
+    };
+
+    $scope.$watch('typeFilter', function(oldVal, newVal) {
+        evalReset();
+    }, true);
+
+    $scope.$watch('flavorFilter', function(oldVal, newVal) {
+        evalReset();
+    }, true);
+
+    var evalReset = function() {
+        $scope.showReset = !($scope.typeFilter.box && $scope.typeFilter.cone && $scope.typeFilter.pouch &&
+        $scope.flavorFilter.woody && $scope.flavorFilter.floral && $scope.flavorFilter.blend && $scope.flavorFilter.fruity);
+    };
+
 	$scope.products = [];
-	$scope.box = true;
+
+    /*
+    $scope.box = true;
     $scope.cone = true;
     $scope.pouch = true;
     $scope.Economy = true;
+    $scope.woody = true;
+    $scope.fruity = true;
+    $scope.floral = true;
+    $scope.blend = true;
+    */
 
 	$scope.showInfo = function() {
 		console.log("On showInfo");
@@ -28,4 +67,5 @@ module.exports = function($scope, gpwResource) {
         });
         console.log($scope.similarProd);
     };
+    evalReset();
 };

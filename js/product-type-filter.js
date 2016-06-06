@@ -1,28 +1,32 @@
 module.exports =  function() {
     console.log('Gopika Product Type Filter');
-    return function(input, isBox, isPouch, isCone, isEconomy) {
-        console.log('Filter: box:' + isBox + 'isPouch:' + isPouch + ' isCone:' + isCone);
+    return function(input, typeFilter, flavorFilter) {
+        var isPouch = typeFilter.pouch;
+        var isCone = typeFilter.cone;
+        var isBox = typeFilter.box;
+        var isFruity = flavorFilter.fruity;
+        var isFloral = flavorFilter.floral;
+        var isWoody = flavorFilter.woody;
+        var isBlend = flavorFilter.blend;
+
         var output = [];
-        if(isBox === false && isPouch === false && isCone === false && isEconomy ===false) {
-            output = input;
-            return output;
+
+        function hasTypeFilter(type) {
+            return (isBox && type === 'box' || isPouch && type === 'pouch' || isCone && type === 'cone');
         }
+        function hasFlavorFilter(flavor) {
+            return (isFloral && flavor === 'floral' || isWoody && flavor === 'woody' ||
+            isFruity && flavor === 'fruity' || isBlend && flavor === 'blend');
+        }
+
         for (var i = 0; i < input.length; ++i) {
             var product = input[i];
 
-            if (isBox && product.type === 'box') {
-                output.push(product);
-            }
-            if (isPouch && product.type === 'pouch') {
-                output.push(product);
-            }
-            if (isCone && product.type === 'cone') {
-                output.push(product);
-            }
-            if (isEconomy && product.type === 'Economy') {
+            if (hasTypeFilter(product.type) && hasFlavorFilter(product.flavor)) {
                 output.push(product);
             }
         }
+
         return output;
     };
 };

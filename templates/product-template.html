@@ -10,25 +10,29 @@
                 </div>
             </form>
         </div>
+
         <div class="row checkbox">
             <div class="col-md-12 col-sm-6"> <div class="gpw-filter-heading"> Aroma </div>
-                <div> <label><input type="checkbox" ng-model="floral">Floral</label></div>
-                <div> <label><input type="checkbox" ng-model="woody">Woody</label> </div>
-                <div> <label><input type="checkbox" ng-model="fruity">Fruity</label> </div>
-                <div> <label><input type="checkbox" ng-model="blend">Blend</label></div>
+                <div> <label><input type="checkbox" ng-model="flavorFilter.floral">Floral</label></div>
+                <div> <label><input type="checkbox" ng-model="flavorFilter.woody">Woody</label> </div>
+                <div> <label><input type="checkbox" ng-model="flavorFilter.fruity">Fruity</label> </div>
+                <div> <label><input type="checkbox" ng-model="flavorFilter.blend">Blend</label></div>
             </div>
             <div class="col-md-12 col-sm-6"><div class="gpw-filter-heading"> Packaging </div>
-                <div> <label><input type="checkbox" ng-model="box">Box </label> </div>
-                <div> <label><input type="checkbox" ng-model="pouch">Pouch</label> </div>
-                <div> <label><input type="checkbox" ng-model="cone">Cone</label></div>
+                <div> <label><input type="checkbox" ng-model="typeFilter.box"> Box </label> </div>
+                <div> <label><input type="checkbox" ng-model="typeFilter.pouch">Pouch</label> </div>
+                <div> <label><input type="checkbox" ng-model="typeFilter.cone">Cone</label></div>
             </div>
+        </div>
+        <div class="row">
+            <button class="btn btn-secondary btn-sm" ng-show="showReset" ng-click="resetFilters()"> &times Reset Filters </button>
         </div>
     </nav>
     <!--Main Content -->
     <div class="col-md-9">
 
       <div id="products" class="row">
-        <div ng-repeat="p in products | filter:query | gpwProdType:box:pouch:cone:Economy">
+        <div ng-repeat="p in products | filter:query | gpwProdType:typeFilter:flavorFilter">
             <div p="p" index="$index" gpw-product-grid></div>
           </div>
         </div>
