@@ -10,18 +10,24 @@
   margin: 20px 10px 60px 0px;
   padding-bottom: 30px;
   //background-image: linear-gradient(rgba(18, 18, 18, 0.84), rgba(164, 164, 164, 0.8)); //rgba(164, 164, 164, 0.8);
+  //background-image: linear-gradient(rgba(188, 137, 2, 0.44), rgb(239, 217, 141)); //rgba(164, 164, 164, 0.8);
   background-image: linear-gradient(rgb(6, 24, 34), rgb(239, 217, 141)); //rgba(164, 164, 164, 0.8);
+  //background-image: linear-gradient(rgba(192, 0, 1, 0.76), rgb(229, 221, 13)); //rgba(164, 164, 164, 0.8);
+  //background-color: rgba(240, 216, 178, 0.73);
   width: 96%;
+  box-shadow: 5px -5px 8px rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid gainsboro;
   .title {
     display: block;
     margin-top: 20px;
     margin-left: 60px;
     font-size: 24px;
-    color: white;
+    color: #eaeaea;
   }
   .content {
     padding: 20px;
   }
+
 }
 
 .fitem {
