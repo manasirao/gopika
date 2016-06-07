@@ -52,6 +52,7 @@
     "name": "Black Pearl Big Pouch",
     "description": "An Exotic fragrance",
     "type": "pouch",
+    "flavor": "fruity",
     "brand": "gopika",
     "price": 350,
     "sticks": 150,
@@ -129,11 +130,27 @@
     "name": "Shivalaya",
     "description": "An Exotic fragrance",
     "type": "box",
+    "flavor": "blend",
     "brand": "gopika",
     "price": 350,
     "sticks": 150,
     "image": "shivalaya-box.jpg",
     "fimage": "shivalaya.png",
+    "productGroup": "Shivalaya",
+    "details": "this is an awesome product",
+    "display": {
+      "orientation": "portrait"
+    }
+  },
+  {
+    "name": "Shivalaya Economy",
+    "description": "An Exotic fragrance",
+    "type": "box",
+    "flavor": "blend",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "shivalaya-eco.jpg",
     "productGroup": "Shivalaya",
     "details": "this is an awesome product",
     "display": {
@@ -199,10 +216,10 @@
     }
   },
   {
-    "name": "Gopika",
+    "name": "Gopika 4 in 1",
     "description": "A House Classic",
     "flavor": "blend",
-    "type": "pouch",
+    "type": "box",
     "brand": "gopika",
     "price": 350,
     "sticks": 150,
@@ -229,7 +246,7 @@
     }
   },
   {
-    "name": "Gulab",
+    "name": "Gulab Pouch",
     "description": "Traditional Rose",
     "flavor": "floral",
     "type": "pouch",
@@ -302,7 +319,261 @@
       "orientation": "portrait"
     }
   },
+  {
+    "name": "Savithri Classix",
+    "description": "A House Favorite",
+    "type": "box",
+    "flavor": "blend",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "savithri-classix-box.jpg",
+    "productGroup": "Savithri",
+    "details": "This is an awesome product",
+    "display": {
+      "orientation": "portrait"
+    }
+  },
+  {
+    "name": "Savithri ",
+    "description": "An Exotic fragrance",
+    "type": "box",
+    "flavor": "blend",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "savithri.jpg",
+    "productGroup": "Savithri",
+    "details": "this is an awesome product",
+    "display": {
+      "orientation": "portrait"
+    }
+  },
+  {
+    "name": "Savithri 200",
+    "description": "An Exotic fragrance",
+    "type": "box",
+    "flavor": "blend",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "savithri200.jpg",
+    "productGroup": "Savithri",
+    "details": "this is an awesome product",
+    "display": {
+      "orientation": "portrait"
+    }
+  },
+  {
+    "name": "Savithri Classix Small Pouch",
+    "description": "An Exotic fragrance",
+    "type": "pouch",
+    "flavor": "blend",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "savithri-classix-pouch.jpg",
+    "productGroup": "Savithri",
+    "details": "this is an awesome product",
+    "display": {
+      "orientation": "portrait"
+    }
+  },
+  {
+    "name": "Savithri Big Tube",
+    "description": "An Exotic fragrance",
+    "type": "box",
+    "flavor": "blend",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "savithri-tube-big.jpg",
+    "productGroup": "Savithri",
+    "details": "This is an awesome product",
+    "display": {
+      "orientation": "portrait"
+    }
+  },
+  {
+    "name": "Savithri Classix Big Pouch",
+    "description": "An Exotic fragrance",
+    "type": "pouch",
+    "flavor": "blend",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "savithri-classix-zipper-pouch-big.jpg",
+    "productGroup": "Savithri",
+    "details": "this is an awesome product",
+    "display": {
+      "orientation": "landscape"
+    }
+  },
 
+  {
+    "name": "Twist Small",
+    "description": "An Exotic fragrance",
+    "type": "box",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "twist-box-small.jpg",
+    "productGroup": "Twist",
+    "details": "this is an awesome product",
+    "display": {
+      "orientation": "portrait"
+    }
+  },
+  {
+    "name": "Twist",
+    "description": "An Exotic fragrance",
+    "type": "box",
+    "flavor": "blend",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "twist-box.jpg",
+    "productGroup": "Twist",
+    "details": "this is an awesome product",
+    "display": {
+      "orientation": "portrait"
+    }
+  },
+  {
+    "name": "Twist Economy",
+    "description": "An Exotic fragrance",
+    "type": "Economy",
+    "flavor": "blend",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "twist-eco.jpg",
+    "productGroup": "Twist",
+    "details": "this is an awesome product",
+    "display": {
+      "orientation": "portrait"
+    }
+  },
+  {
+    "name": "Twist Small Pouch",
+    "description": "An Exotic fragrance",
+    "type": "pouch",
+    "flavor": "blend",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "twist-pouch-SMALL.jpg",
+    "productGroup": "Twist",
+    "details": "This is an awesome product",
+    "display": {
+      "orientation": "portrait"
+    }
+  },
+  {
+    "name": "Twist Zipper Pouch",
+    "description": "An Exotic fragrance",
+    "type": "pouch",
+    "flavor": "blend",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "twist-zipper-pouch.jpg",
+    "productGroup": "Twist",
+    "details": "This is an awesome product",
+    "display": {
+      "orientation": "landscape"
+    }
+  },
+  {
+    "name": "Vanilla",
+    "description": "An Exotic fragrance",
+    "type": "box",
+    "flavor": "fruity",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "vanilla-box.jpg",
+    "productGroup": "Vanilla",
+    "details": "This is an awesome product",
+    "display": {
+      "orientation": "portrait"
+    }
+  },
+  {
+    "name": "Vanilla Economy",
+    "description": "An Exotic fragrance",
+    "type": "Economy",
+    "flavor": "fruity",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "vanilla-eco.jpg",
+    "productGroup": "Vanilla",
+    "details": "This is an awesome product",
+    "display": {
+      "orientation": "portrait"
+    }
+  },
+  {
+    "name": "Vanilla JumboPack",
+    "description": "An Exotic fragrance",
+    "type": "box",
+    "flavor": "fruity",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "vanilla-jumbo-pack.jpg",
+    "productGroup": "Vanilla",
+    "details": "This is an awesome product",
+    "display": {
+      "orientation": "portrait"
+    }
+  },
+  {
+    "name": "Rose",
+    "description": "An Exotic fragrance",
+    "type": "box",
+    "flavor": "floral",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "rose-box.jpg",
+    "productGroup": "Rose",
+    "details": "this is an awesome product",
+    "display": {
+      "orientation": "portrait"
+    }
+  },
+  {
+    "name": "Rose Economy",
+    "description": "An Exotic fragrance",
+    "type": "box",
+    "flavor": "floral",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "rose-eco.jpg",
+    "productGroup": "Rose",
+    "details": "This is an awesome product",
+    "display": {
+      "orientation": "portrait"
+    }
+  },
+  {
+    "name": "Rose JumboPack",
+    "description": "An Exotic fragrance",
+    "type": "box",
+    "flavor": "floral",
+    "brand": "gopika",
+    "price": 350,
+    "sticks": 150,
+    "image": "rose-jumbo-pack.jpg",
+    "productGroup": "Rose",
+    "details": "this is an awesome product",
+    "display": {
+      "orientation": "portrait"
+    }
+  },
   {
     "name": "Lovely Amber",
     "description": "Warm and Natural Aroma",
@@ -378,5 +649,4 @@
       "orientation": "landscape"
     }
   }
-
 ]

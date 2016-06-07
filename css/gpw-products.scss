@@ -1,5 +1,19 @@
 $product-grid-image-height: 240px;
 
+.gpw-filter-reset {
+  position: relative;
+  left: 40%;
+  min-height: 30px;
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+
+@media (min-width: 992px) {
+  .gpw-filter-reset {
+    left: 10%;
+  }
+}
+
 .gpw-filter-heading {
   font-weight: bold;
   background-color: #c8c8c8;
