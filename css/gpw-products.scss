@@ -1,17 +1,21 @@
 $product-grid-image-height: 240px;
 
+.gpw-not-found-msg {
+  margin:40px;
+  padding: 20px;
+  background-color: rgba(220, 67, 85, 0.3);
+  border-radius: 10px;
+  font-style: inherit;
+  font-weight: 300;
+  color: #333;
+}
+
 .gpw-filter-reset {
   position: relative;
   left: 40%;
   min-height: 30px;
   font-size: 20px;
   margin: 0 0 10px 0;
-}
-
-@media (min-width: 992px) {
-  .gpw-filter-reset {
-    left: 10%;
-  }
 }
 
 .gpw-filter-heading {
@@ -129,6 +133,7 @@ $product-grid-image-height: 240px;
 
   .left-inner-addon {
     position: relative;
+    left: 0px;
   }
 
   .left-inner-addon input {
@@ -149,7 +154,6 @@ $product-grid-image-height: 240px;
     -webkit-border-radius: 10em;
     -moz-border-radius: 10em;
     border-radius: 10em;
-
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
     transition: all .5s;
@@ -157,7 +161,6 @@ $product-grid-image-height: 240px;
 
   input[type=search]:focus {
     margin-left: 5px;
-    width: 90%;
     background-color: #fff;
     border-color: #66CC75;
     -webkit-box-shadow: 0 0 5px rgba(109, 207, 246, .5);
@@ -166,6 +169,16 @@ $product-grid-image-height: 240px;
   }
 
   @media (min-width: 992px) {
+
+    .left-inner-addon{
+      position: relative;
+      left: 0;
+    }
+
+    .gpw-filter-reset {
+      left: 10%;
+    }
+
     input[type=search] {
       width: 70%;
     }

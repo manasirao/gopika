@@ -13,20 +13,20 @@
   </head>
   <body>
    <div ng-app="gopikaApp">
-       <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+        <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
            <div class="container-fluid">
-            <div class="navbar-header">
-              <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarCollapsed">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-                <a class="navbar-brand" href="#">
-                    <span id="logoName"> Gopika Perfumary Works </span>
-                    <img id="logo" src="images/gopika_logo_shorter.jpg">
-                </a>
-            </div>
-            <div class="collapse navbar-collapse navbar-right" id="navbarCollapsed">
+                <div class="navbar-header">
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarCollapsed">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <span id="logoName"> Gopika Perfumary Works </span>
+                        <img id="logo" src="images/gopika_logo_shorter.jpg">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse navbar-right" id="navbarCollapsed">
               <ul class="nav navbar-nav">
                 <li><a class='gpwMenu' ui-sref="home">Home</a></li>
                 <li><a class='gpwMenu' ui-sref="products">Products</a></li>
@@ -34,20 +34,20 @@
                 <li><a class='gpwMenu' ui-sref="contact">Contact</a></li>
               </ul>
             </div>
-          </div>
+            </div>
         </nav>
-      <div id="gopikaContainer">
+        <div id="gopikaContainer">
           <!-- main content -->
           <div class="row" ui-view> </div>
-      </div>
+        </div>
 
       <div id="footerDiv">
         <div class="col-md-12 copyright">
           Copyright © 2015 Gopika Perfumary Works, Mysore. All rights reserved. <br/>
-          <span class="footercontact">Email: marketing@gopikaindia.com, Phone: +91 821 2529529<span>
+          <span class="footercontact">Email: marketing@gopikaindia.com, Phone: +91 821 2529529</span>
         </div>
-      </div>
-</div>
+       </div>
+   </div>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/angular/angular.min.js"></script>

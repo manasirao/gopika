@@ -1,42 +1,46 @@
 <div class="container" id="productDiv">
   <div class="row">
-    <!--Nav Bar -->
-    <nav class="col-md-2">
+    <div class="col-md-2">
+
         <div class="row">
             <form class="col-md-12 col-sm-12 col-xs-12">
                 <div class="left-inner-addon">
                     <i class="glyphicon glyphicon-search" style="margin-left: 5px;"></i>
-                    <input ng-model="query" type="search" class="form-control" placeholder="Search" />
+                    <input ng-model="query" type="search" class="form-control" placeholder="Search..." />
                 </div>
             </form>
         </div>
 
-        <div class="row checkbox">
-            <div class="col-md-12 col-sm-6"> <div class="gpw-filter-heading"> Aroma </div>
+        <div class="row">
+            <div class="checkbox">
+              <div class="col-md-12 col-sm-6"> <div class="gpw-filter-heading"> Aroma </div>
                 <div> <label><input type="checkbox" ng-model="flavorFilter.floral">Floral</label></div>
                 <div> <label><input type="checkbox" ng-model="flavorFilter.woody">Woody</label> </div>
                 <div> <label><input type="checkbox" ng-model="flavorFilter.fruity">Fruity</label> </div>
                 <div> <label><input type="checkbox" ng-model="flavorFilter.blend">Blend</label></div>
-            </div>
-            <div class="col-md-12 col-sm-6"><div class="gpw-filter-heading"> Packaging </div>
+              </div>
+              <div class="col-md-12 col-sm-6"><div class="gpw-filter-heading"> Packaging </div>
                 <div> <label><input type="checkbox" ng-model="typeFilter.box"> Box </label> </div>
                 <div> <label><input type="checkbox" ng-model="typeFilter.pouch">Pouch</label> </div>
                 <div> <label><input type="checkbox" ng-model="typeFilter.cone">Cone</label></div>
+              </div>
             </div>
         </div>
+
         <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12 gpw-filter-reset">
+            <div class="col-md-12 col-sm-6 col-xs-6 gpw-filter-reset">
                 <button class="btn btn-danger btn-sm" ng-show="showReset" ng-click="resetFilters()"> &times Reset Filters </button>
             </div>
         </div>
-    </nav>
+    </div>
     <!--Main Content -->
     <div class="col-md-9">
 
       <div id="products" class="row">
-        <div ng-repeat="p in products | filter:query | gpwProdType:typeFilter:flavorFilter">
-            <div p="p" index="$index" gpw-product-grid></div>
-          </div>
+            <div ng-repeat="p in products | filter:query | gpwProdType:typeFilter:flavorFilter as filtered">
+                <div p="p" index="$index" gpw-product-grid></div>
+            </div>
+            <div class="gpw-not-found-msg" ng-if="filtered.length === 0"> <h4> Sorry No Matching Products, 'Clear Search' or 'Reset Filters'</h4></div>
         </div>
       </div>
     </div>
