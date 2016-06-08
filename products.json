@@ -328,6 +328,7 @@
     "price": 350,
     "sticks": 150,
     "image": "savithri-classix-box.jpg",
+    "fimage": "savithri-classix-box.png",
     "productGroup": "Savithri",
     "details": "This is an awesome product",
     "display": {
@@ -373,6 +374,7 @@
     "price": 350,
     "sticks": 150,
     "image": "savithri-classix-pouch.jpg",
+    "fimage": "savithri-classix-pouch.png",
     "productGroup": "Savithri",
     "details": "this is an awesome product",
     "display": {
