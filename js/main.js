@@ -24,6 +24,7 @@ app.constant('ProductTemplate', require('../templates/product-template.html'));
 
 app.controller('homeCtrl', require('./home-ctrl.js'));
 app.controller('productCtrl', require('./product-ctrl.js'));
+app.controller('contactCtrl', require('./contact-ctrl.js'));
 app.filter('gpwProdType', require('./product-type-filter.js'));
 app.constant('SimilarProductTemplate', require('./product-similar-template.html'));
 app.directive('gpwSimilarProd', require('./product-similar-directive.js'));

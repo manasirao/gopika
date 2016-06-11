@@ -63,7 +63,7 @@ module.exports = function(grunt) {
         copy: {
             dist: {
                 files: [
-                    /* {expand: true, cwd: './css',  src: ['*.css'], dest: '<%= gpwConfig.dist %>/styles', filter: 'isFile'}, */
+                    {expand: false, src: ['message.php'], dest: '<%= gpwConfig.dist %>/message.php', filter: 'isFile'},
                     {expand: false, src: ['index.html'], dest: '<%= gpwConfig.dist %>/index.html', filter: 'isFile'},
                     {expand: false, src: ['products.json'], dest: '<%= gpwConfig.dist %>/products.json', filter: 'isFile'},
                     {expand: false, src: ['featured-products.json'], dest: '<%= gpwConfig.dist %>/featured-products.json', filter: 'isFile'},

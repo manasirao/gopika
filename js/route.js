@@ -17,6 +17,7 @@ module.exports = function($stateProvider, $urlRouterProvider, HomeTemplate, Abou
         })
         .state('contact', {
             url: "/contact",
-            template: ContactTemplate
+            template: ContactTemplate,
+            controller: 'contactCtrl'
         });
 };
