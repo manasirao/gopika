@@ -1,5 +1,5 @@
-module.exports = function($scope, gpwResource) {
-	console.log('Product Controller Initialized');
+module.exports = function($scope, gpwResource, $log) {
+	$log.debug('Product Controller Initialized');
 
     $scope.typeFilter = {
         box: true,
@@ -35,7 +35,7 @@ module.exports = function($scope, gpwResource) {
 	$scope.products = [];
 
 	$scope.showInfo = function() {
-		console.log("On showInfo");
+		$log.debug("On showInfo");
 	};
 
     gpwResource.getProducts(function(data) {
@@ -46,7 +46,7 @@ module.exports = function($scope, gpwResource) {
     $scope.getProductGroup = function(index) {
         var group = $scope.products[index].productGroup;
         $scope.similarProd.length = 0;
-        console.log("clicked: " + group);
+        $log.debug("clicked: " + group);
 
         angular.forEach($scope.products, function(product, key) {
             if(product.productGroup === group && key !== index) {
@@ -54,7 +54,7 @@ module.exports = function($scope, gpwResource) {
 
             }
         });
-        console.log($scope.similarProd);
+        $log.debug($scope.similarProd);
     };
     evalReset();
 };

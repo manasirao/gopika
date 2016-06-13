@@ -1,5 +1,4 @@
 module.exports =  function() {
-    console.log('Gopika Product Type Filter');
     return function(input, typeFilter, flavorFilter) {
         var isPouch = typeFilter.pouch;
         var isCone = typeFilter.cone;

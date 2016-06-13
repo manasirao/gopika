@@ -25,9 +25,9 @@ module.exports = function($scope, $log, $http) {
         $log.debug('Form Submitted' + JSON.stringify($scope.cinfo));
         $http.post(MessageUrl, $scope.cinfo).then(function(res) {
 
-            $log.info('Success:' + JSON.stringify(res));
+            $log.debug('Success:' + JSON.stringify(res));
             var data = res.data;
-            $log.info('Sending mail success: ' + data.result);
+            $log.debug('Sending mail success: ' + data.result);
             if (data.result) { // data.result === true
                 $scope.status = $scope.States.success;
                 $scope.statusMessage = $scope.StatusMessage.thankyou;

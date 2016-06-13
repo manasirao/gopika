@@ -1,6 +1,6 @@
-module.exports = function($http) {
+module.exports = function($http, $log) {
     var getProducts = function(done) {
-        console.log('Ravi Getting Products');
+        $log.debug('Getting Products');
         $http({method: 'GET', url: 'products.json?nocache=' + (new Date()).getTime()
         }).then(function successResp(response) {
             //console.log("Products Received: " + JSON.stringify(response));
@@ -9,14 +9,13 @@ module.exports = function($http) {
     };
 
     var getFeaturedProducts = function(done) {
-        console.log('Ravi Getting Featured Products');
+        $log.debug('Getting Featured Products');
         $http({method: 'GET', url: 'featured-products.json?nocache=' + (new Date()).getTime()
         }).then(function successResp(response) {
             //console.log("featured Received: " + JSON.stringify(response));
             done(response.data);
         });
     };
-
 
     this.getProducts = getProducts;
     this.getFeaturedProducts = getFeaturedProducts;

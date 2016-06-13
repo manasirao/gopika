@@ -7,10 +7,10 @@ var moduleName = 'gopikaApp';
 var app = angular.module(moduleName, ['ui.router']);
 
 app.run(['$rootScope', '$state', '$stateParams', function($rootScope, $state, $stateParams) {
-    console.log("Gopika UI Router");
+    //console.log("Gopika UI Router");
     $rootScope.$state = $state;
     $rootScope.$stateParams = $stateParams;
-    console.log(JSON.stringify($state));
+    //console.log(JSON.stringify($state));
 }]);
 
 
