@@ -1,6 +1,6 @@
 <div class="container" id="contactDiv">
   <div class="row" >
-    <div class="col-md-6">
+    <div class="col-md-6" ng-if='status === States.init'>
       <form ng-submit="submitMessage()">
       <div class="form-group">
         <label for="InputName">Your Name</label>
@@ -19,7 +19,7 @@
       <div class="form-group">
         <label for="mobile">Contact Number</label>
         <div class="input-group">
-          <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter Phone number" ng-model="cinfo.number" required>
+          <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter Phone number" ng-model="cinfo.phone" required>
           <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
         </div>
       </div>
@@ -30,9 +30,11 @@
       <input type="submit" name="submit" id="submit" value="Send Message" class="btn btn-info pull-right">
       </form>
     </div>
+    <div class="col-md-6" ng-if='status !== States.init'>
+      <div ng-class = '{"gpw-success-msg": status === States.success, "gpw-error-msg": status === States.failure}'> <h4> {{statusMessage}} </h4></div>
+    </div>
 
-
-  <div class="col-lg-5 col-md-push-1">
+    <div class="col-lg-5 col-md-push-1">
     <h3><span class="glyphicon glyphicon-globe"></span> Office Location</h3>
     <address>
     <p class="lead"><a href="#"><strong>Gopika Perfumary Works</strong><br></a>

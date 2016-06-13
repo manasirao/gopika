@@ -27,7 +27,7 @@ module.exports = function(grunt) {
         },
         watch: {
             dist: {
-                files: ['css/*.scss', 'css/*.css', 'featured-products.json', 'products.json', 'Gruntfile.js', 'js/**/*.js', 'js/**/*.html',  'templates/**/*.html', 'index.html'],
+                files: ['message.php', 'css/*.scss', 'css/*.css', 'featured-products.json', 'products.json', 'Gruntfile.js', 'js/**/*.js', 'js/**/*.html',  'templates/**/*.html', 'index.html'],
                 tasks: ['buildDev']
             }
         },
@@ -63,8 +63,8 @@ module.exports = function(grunt) {
         copy: {
             dist: {
                 files: [
-                    {expand: false, src: ['message.php'], dest: '<%= gpwConfig.dist %>/message.php', filter: 'isFile'},
                     {expand: false, src: ['index.html'], dest: '<%= gpwConfig.dist %>/index.html', filter: 'isFile'},
+                    {expand: false, src: ['message.php'], dest: '<%= gpwConfig.dist %>/message.php', filter: 'isFile'},
                     {expand: false, src: ['products.json'], dest: '<%= gpwConfig.dist %>/products.json', filter: 'isFile'},
                     {expand: false, src: ['featured-products.json'], dest: '<%= gpwConfig.dist %>/featured-products.json', filter: 'isFile'},
                     {expand: true,  src: ['bower_components/*/**'], dest: '<%= gpwConfig.dist %>/' },

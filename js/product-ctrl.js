@@ -34,17 +34,6 @@ module.exports = function($scope, gpwResource) {
 
 	$scope.products = [];
 
-    /*
-    $scope.box = true;
-    $scope.cone = true;
-    $scope.pouch = true;
-    $scope.Economy = true;
-    $scope.woody = true;
-    $scope.fruity = true;
-    $scope.floral = true;
-    $scope.blend = true;
-    */
-
 	$scope.showInfo = function() {
 		console.log("On showInfo");
 	};

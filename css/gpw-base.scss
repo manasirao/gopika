@@ -57,6 +57,26 @@ body {
 }
 
 
+.gpw-message {
+  margin:40px;
+  padding: 20px;
+  border-radius: 10px;
+  font-style: inherit;
+  font-weight: 300;
+  color: #333;
+}
+
+.gpw-error-msg {
+  @extend .gpw-message;
+  background-color: rgba(220, 67, 85, 0.3);
+}
+
+.gpw-success-msg {
+  @extend .gpw-message;
+  background-color: rgba(48, 220, 26, 0.36);
+}
+
+
 .gpwMenu {
   font-size: 1.2em !important;
   padding-left: 8px !important;

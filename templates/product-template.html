@@ -40,7 +40,7 @@
             <div ng-repeat="p in products | filter:query | gpwProdType:typeFilter:flavorFilter as filtered">
                 <div p="p" index="$index" gpw-product-grid></div>
             </div>
-            <div class="gpw-not-found-msg" ng-if="filtered.length === 0"> <h4> Sorry No Matching Products, 'Clear Search' or 'Reset Filters'</h4></div>
+            <div class="gpw-error-msg" ng-if="filtered.length === 0"> <h4> Sorry No Matching Products, 'Clear Search' or 'Reset Filters'</h4></div>
         </div>
       </div>
     </div>
