@@ -1,5 +1,21 @@
 $product-grid-image-height: 240px;
 
+.store-logos {
+  .title {
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  .logo-container {
+    margin: 20px;
+  }
+
+  img {
+    height: 60px;
+    width: auto;
+  }
+}
 .gpw-filter-reset {
   position: relative;
   left: 40%;
