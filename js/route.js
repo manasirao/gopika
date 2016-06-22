@@ -1,4 +1,4 @@
-module.exports = function($stateProvider, $urlRouterProvider, $logProvider, HomeTemplate, AboutTemplate, ProductTemplate, ContactTemplate) {
+module.exports = ['$stateProvider', '$urlRouterProvider', '$logProvider', 'HomeTemplate', 'AboutTemplate', 'ProductTemplate', 'ContactTemplate', function($stateProvider, $urlRouterProvider, $logProvider, HomeTemplate, AboutTemplate, ProductTemplate, ContactTemplate) {
     $logProvider.debugEnabled(false); // Enable here for logging
     $urlRouterProvider.otherwise('/');
     $stateProvider
@@ -21,4 +21,4 @@ module.exports = function($stateProvider, $urlRouterProvider, $logProvider, Home
             template: ContactTemplate,
             controller: 'contactCtrl'
         });
-};
+}];

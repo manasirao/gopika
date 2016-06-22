@@ -42,7 +42,7 @@ module.exports = function(grunt) {
             dist: {
                 transform: [stringify(['.html', '.xml'])],
                 files: {
-                    './dist/js/main.js': ['js/main.js']
+                    './tmp/js/main.js': ['js/main.js']
                 }
             }
         },
@@ -63,6 +63,7 @@ module.exports = function(grunt) {
         copy: {
             dist: {
                 files: [
+                    {expand: false, src: ['robots.txt'], dest: '<%= gpwConfig.dist %>/robots.txt', filter: 'isFile'},
                     {expand: false, src: ['index.html'], dest: '<%= gpwConfig.dist %>/index.html', filter: 'isFile'},
                     {expand: false, src: ['message.php'], dest: '<%= gpwConfig.dist %>/message.php', filter: 'isFile'},
                     {expand: false, src: ['products.json'], dest: '<%= gpwConfig.dist %>/products.json', filter: 'isFile'},
@@ -72,12 +73,29 @@ module.exports = function(grunt) {
                 ]
             }
         },
+        uglify: {
+            dist: {
+                files: {
+                    'dist/js/main.min.js': ['./tmp/js/main.min.safe.js']
+                }
+            }
+        },
         clean: {
             dist: {
                 files: [{
                     dot: true,
                     src: ['<%= gpwConfig.dist %>/*']
                 }]
+            }
+        },
+        ngAnnotate: {
+            options: {
+                singleQuotes: true,
+            },
+            dist: {
+                files: {
+                    './tmp/js/main.min.safe.js': ['./tmp/js/main.js']
+                }
             }
         }
     });
@@ -94,6 +112,8 @@ module.exports = function(grunt) {
     grunt.registerTask('buildDev', [
         'clean:dist',
         'browserify:dist',
+        'ngAnnotate:dist',
+        'uglify:dist',
         'sass:dist',
         'copy:dist'
     ]);

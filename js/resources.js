@@ -1,4 +1,4 @@
-module.exports = function($http, $log) {
+module.exports = ['$http', '$log', function($http, $log) {
     var getProducts = function(done) {
         $log.debug('Getting Products');
         $http({method: 'GET', url: 'products.json?nocache=' + (new Date()).getTime()
@@ -16,7 +16,6 @@ module.exports = function($http, $log) {
             done(response.data);
         });
     };
-
     this.getProducts = getProducts;
     this.getFeaturedProducts = getFeaturedProducts;
-};
+}];

@@ -1,4 +1,4 @@
-module.exports = function($scope, $log, gpwResource) {
+module.exports = ['$scope', '$log', 'gpwResource', function($scope, $log, gpwResource) {
     $log.debug('Home Controller Initialized');
     $scope.featuredList = [];
     $scope.products = [];
@@ -27,9 +27,7 @@ module.exports = function($scope, $log, gpwResource) {
         });
     };
 
-
-
     /* begin execution here */
     init();
-};
+}];
 

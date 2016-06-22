@@ -1,8 +1,7 @@
 /**
  * Created by mansigrao on 2016-06-10.
  */
-
-module.exports = function($scope, $log, $http) {
+module.exports = ['$scope', '$log', '$http', function($scope, $log, $http) {
     $scope.cinfo = {};
     var MessageUrl = 'message.php';
     $scope.States = {
@@ -40,4 +39,4 @@ module.exports = function($scope, $log, $http) {
             $scope.statusMessage = $scope.StatusMessage.error;
         })
     }
-};
+}];

@@ -1,4 +1,4 @@
-module.exports = function($scope, gpwResource, $log) {
+module.exports = ['$scope', 'gpwResource', '$log', function($scope, gpwResource, $log) {
 	$log.debug('Product Controller Initialized');
 
     $scope.typeFilter = {
@@ -57,4 +57,4 @@ module.exports = function($scope, gpwResource, $log) {
         $log.debug($scope.similarProd);
     };
     evalReset();
-};
+}];

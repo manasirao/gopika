@@ -25,7 +25,6 @@ module.exports =  function() {
                 output.push(product);
             }
         }
-
         return output;
     };
 };
